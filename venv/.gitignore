@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+*.db
+__pycache__/
+
+# SQLite DB
+*.db
+
+# VS Code
+.vscode/
+
+# 환경변수 파일
+.env
+
+# 데이터 파일
+data/

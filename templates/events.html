@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>공연/행사 목록 - 전국 공연/행사 wishlist</title>
+</head>
+<body>
+    <h1>공연/행사 목록</h1>
+    <p>Event 테이블에서 불러온 데이터 50개를 보여줍니다.</p>
+
+    <ul>
+        {% for event in events %}
+            <li>
+                <strong>{{ event["event_name"] }}</strong>
+                <br>
+                날짜: {{ event["start_date"] }} ~ {{ event["end_date"] }}
+                <br>
+                지역: {{ event["region"] }} / 장소: {{ event["place"] }}
+            </li>
+            <hr>
+        {% endfor %}
+    </ul>
+</body>
+</html>
